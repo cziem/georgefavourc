@@ -11,6 +11,11 @@ const Hero = () => {
       <p className="lead">
         I design, develop and build web-based software solutions
       </p>
+
+      <footer>
+        {/* The goal here is to give the user a little gaming experience, the only way to catch the button is to hold down the ctrl key. There's a mobile experience too, but will be developed later */}
+        <button>Catch me if you can</button>
+      </footer>
     </div>
   )
 }

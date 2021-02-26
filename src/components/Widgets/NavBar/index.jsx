@@ -1,28 +1,49 @@
 import React from "react"
+import {
+  AiFillHome as HomeIcon,
+  AiFillProject as ProjectIcon,
+} from "react-icons/ai"
+import {
+  GrBlog as BlogIcon,
+  GrTechnology as TechStackIcon,
+} from "react-icons/gr"
+import { RiUserFollowFill as AboutMeIcon } from "react-icons/ri"
+import { Link, ListItem, NavList } from "../../Commons/styles"
+import { NavBarStyles } from "./styles"
 
 const NavBar = () => {
   return (
-    <div>
+    <NavBarStyles>
       <nav>
-        <ul>
-          <a href="/home">
-            <li>Home</li>
-          </a>
-          <a href="/about">
-            <li>About Me</li>
-          </a>
-          <a href="/projects">
-            <li>Projects</li>
-          </a>
-          <a href="/stack">
-            <li>Stack</li>
-          </a>
-          <a href="/blog">
-            <li>Blog</li>
-          </a>
-        </ul>
+        <NavList direction="column" align="center">
+          <ListItem>
+            <Link href="/home">
+              <HomeIcon />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/about">
+              <AboutMeIcon />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/projects">
+              <ProjectIcon />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/stack">
+              <TechStackIcon />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/blog">
+              <BlogIcon />
+            </Link>
+          </ListItem>
+        </NavList>
       </nav>
-    </div>
+    </NavBarStyles>
   )
 }
 
