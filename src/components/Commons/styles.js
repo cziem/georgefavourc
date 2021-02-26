@@ -25,12 +25,12 @@ export const Link = styled(Linked)`
   transition: background-color 0.5s ease-in-out;
 
   svg {
-    color: #888;
+    color: #eee; // #888
     -webkit-text-stroke-color: #888;
     transition: color 0.2s ease-in-out;
 
     path {
-      stroke: #757575;
+      stroke: #eee; //#757575
       transition: color 0.2s ease-in-out;
     }
   }
@@ -54,11 +54,11 @@ export const Anchor = styled("a")`
   transition: background-color 0.5s ease-in-out;
 
   svg {
-    color: #888;
+    color: #eee;
     transition: color 0.2s ease-in-out;
 
     path {
-      stroke: #757575;
+      stroke: #eee; //#757575
       transition: color 0.2s ease-in-out;
     }
   }
